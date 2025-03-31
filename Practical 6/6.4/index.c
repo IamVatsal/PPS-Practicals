@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 int main(){
     int a[10] = {10,9,8,7,6,5,4,3,2,1};
     int temp;
@@ -18,8 +19,3 @@ int main(){
     }
     return 0;
 }
-
-//int a = 5;
-//int b = 10;
-//int a = a+b;
-//int b = a-b;
