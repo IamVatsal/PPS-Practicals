@@ -13,7 +13,6 @@ int main() {
 
     // Using float array
     float floatArray[10] = {1.9,2.8,3.7,4.6,5.5,6.4,7.3,8.2,9.1,10.6}, floatSum = 0, floatAvg;
-    printf("Enter 10 floating-point numbers:\n");
     for (int i = 0; i < 10; i++) {
         floatSum += floatArray[i];
     }
