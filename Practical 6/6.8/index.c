@@ -1,18 +1,27 @@
 #include<stdio.h>
 
 int main(){
-    int a[3][3]= {0};
-    for(int i = 0 ; i < 3; i++){
+    int a[2][3][4]= {0};
+    int temp = 1;
+    for(int i = 0 ; i < 2; i++){
         for(int j = 0 ; j < 3; j++){
-            printf("At Row:%d, Col:%d : ",i,j);
-            scanf("%d",&a[i][j]);
+            for(int k = 0 ; k < 4; k++){
+                // printf("At Matrix:%d, Row:%d, Col:%d : ",i,j,k);
+                a[i][j][k] = temp;
+                temp++;
+                // scanf("%d",&a[i][j][k]);
+            }
         }
     }
     
-    printf("\nMatrix :\n");
-    for (int i = 0 ; i < 3; i++){
-        for(int j = 0; j < 3; j++){
-            printf("%d ",a[i][j]);
+    for(int i = 0 ; i < 2; i++){
+        printf("\nMatrix : %d\n",i);
+        for(int j = 0 ; j < 3; j++){
+            for(int k = 0 ; k < 4; k++){
+                printf("%d",a[i][j][k]);
+                printf(" ");
+            }
+            printf("\n");
         }
         printf("\n");
     }
