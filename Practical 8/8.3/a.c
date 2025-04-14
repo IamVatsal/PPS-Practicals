@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include "b.c"
 
-extern int a = 10; // Global variable
+extern int a; // Global variable
+
 void fun(){
     printf("Global Variable From Function: %d\n", a);
 }
