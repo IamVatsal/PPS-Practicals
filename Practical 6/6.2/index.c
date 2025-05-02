@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main() {
-    int array[10], oddIndex = 0, evenIndex = 1;
+    int array[10], oddIndexSum = 0, evenIndexProduct = 1;
 
     printf("Enter 10 integers:\n");
     for (int i = 0; i < 10; i++) {
@@ -11,15 +11,15 @@ int main() {
     for (int i = 0; i < 10; i++) {
         if (i % 2 == 0) {
             // Even index
-            evenIndex *= array[i];
+            evenIndexProduct *= array[i];
         } else {
             // Odd index
-            oddIndex += array[i];
+            oddIndexSum += array[i];
         }
     }
 
-    printf("Sum of elements at odd indexes: %d\n", oddIndex);
-    printf("Product of elements at even indexes: %d\n", evenIndex);
+    printf("Sum of elements at odd indexes: %d\n", oddIndexSum);
+    printf("Product of elements at even indexes: %d\n", evenIndexProduct);
 
     return 0;
 }
