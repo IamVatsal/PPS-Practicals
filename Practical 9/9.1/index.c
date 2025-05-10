@@ -27,7 +27,7 @@ int main(){
         printf("Name: %s\n", students[i].name);
         printf("Marks 1: %.2f\n", students[i].marks1);
         printf("Marks 2: %.2f\n", students[i].marks2);
-        printf("Percentage: %.2f%%\n", students[i].marks2+students[i].marks1/2);
+        printf("Percentage: %.2f%%\n", (students[i].marks2+students[i].marks1)/2);
     }
     return 0;
 }

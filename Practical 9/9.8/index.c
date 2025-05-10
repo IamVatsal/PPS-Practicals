@@ -19,7 +19,7 @@ int main(){
     scanf("%*c");
     fgets(ptr, a+1, stdin);
 
-    printf("String is %s\n", ptr);
+    printf("String : %s\n", ptr);
     printf("Length of String is %zu\n", strlen(ptr));
 
 
@@ -27,7 +27,7 @@ int main(){
     printf("Enter new length of String: ");
     scanf("%d", &a);
 
-    realloc(ptr, (a+1)*sizeof(char));
+    ptr = realloc(ptr, (a+1)*sizeof(char));
     if(ptr == NULL){
         printf("Memory not allocated\n");
         return 0;
@@ -37,7 +37,7 @@ int main(){
     scanf("%*c");
     fgets(ptr, a+1, stdin);
 
-    printf("String is %s\n", ptr);
+    printf("String : %s\n", ptr);
     printf("Length of String is %zu\n", strlen(ptr));
 
     free(ptr);

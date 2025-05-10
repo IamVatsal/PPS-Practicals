@@ -9,7 +9,7 @@ int main()  {
 	FILE* fp; 
 
 	// opening a file which does not exist 
-	fp = fopen("GeeksForGeeks.txt", "r"); 
+	fp = fopen("Vatsal.txt", "r"); 
 
     perror("Message From perror");
 	printf("Value of errno: %d\n", errno); 
